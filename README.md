@@ -7,4 +7,4 @@ Contact Form Integration – Users can easily send inquiries.
 SEO Optimized – Designed for better search engine visibility.
 Fast & Secure – Optimized for speed and performance
 
-Frontend: HTML, CSS, JavaScript
+Frontend: HTML, CSS, JavaScript 
