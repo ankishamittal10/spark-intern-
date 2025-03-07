@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spark Intern - Building Digital Network</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <img src="assets/images/logo.png" alt="" class="logo">
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#feature" class="navbar-link" data-nav-link>Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#roadmap" class="navbar-link" data-nav-link>Roadmap</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#work" class="navbar-link" data-nav-link>Work</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="contact.html" class="btn btn-primary has-before has-after">Let’s Talk 👋</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" data-aos="fade-up" data-aos-duration="800">
+              Increase Opportunities With <span class="has-before">Spark Intern </span>,
+            </h1>
+
+            <p class="hero-text" data-aos="fade-up" data-aos-duration="1200">
+              At Spark Intern, we are committed to shaping the future by empowering the brightest talents to reach their
+              full potential. Our platform connects aspiring professionals with outstanding opportunities guided by our
+              team of industry experts. Join us to learn, grow, and thrive in a dynamic and supportive environment.
+            </p>
+
+            <div class="wrapper" data-aos="fade-up" data-aos-duration="1400">
+              <a href="contact.html" class="btn btn-primary has-before has-after">How It Works</a>
+            </div>
+          </div>
+
+          <figure class="hero-banner" data-aos="zoom-out-up">
+            <img src="./assets/images/hero-banner.png" width="794" height="637" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Our Services</p>
+
+          <h2 class="h2 section-title text-center">Explore Our Internship
+            <span class="has-before">
+              Domains</span>
+          </h2>
+
+          <ul class="grid-list">
+
+            <li data-aos="fade-up" data-aos-duration="800" onclick="showPopup('Javascript')">
+              <div class="service-card" style="--color: 52, 98%, 50%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon8.webp" width="50" height="50" loading="lazy" alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="javascript:;" class="card-title">Javascript</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-duration="800" onclick="showPopup('Full-Stack Development')">
+              <div class="service-card" style="--color: 267, 76%, 57%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-2.webp" width="50" height="50" loading="lazy" alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="javascript:;" class="card-title">Full-Stack Development</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-duration="800" onclick="showPopup('Cyber Security')">
+              <div class="service-card" style="--color: 17, 100%, 68%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-3.webp" width="50" height="50" loading="lazy" alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="javascript:;" class="card-title">Cyber Security </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-duration="800" onclick="showPopup('Data Analyst')">
+              <div class="service-card" style="--color: 343, 98%, 60%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-4.webp" width="50" height="50" loading="lazy" alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="javascript:;" class="card-title">Data Analyst</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-duration="800" onclick="showPopup('AI Course')">
+              <div class="service-card" style="--color: 210, 100%, 53%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon9.webp" width="50" height="50" loading="lazy" alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="javascript:;" class="card-title">AI Course</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-duration="800" onclick="showPopup('Digital Marketing')">
+              <div class="service-card" style="--color: 157, 89%, 44%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-6.webp" width="50" height="50" loading="lazy" alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="javascript:;" class="card-title">Digital Marketing </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-duration="800" onclick="showPopup('Python Development')">
+              <div class="service-card" style="--color: 52, 98%, 50%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-7.webp" width="50" height="50" loading="lazy" alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="javascript:;" class="card-title">Python Devlopment</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-duration="800" onclick="showPopup('MySQL')">
+              <div class="service-card" style="--color: 174, 77%, 50%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon10.webp" width="50" height="50" loading="lazy" alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="javascript:;" class="card-title">MySQL </a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+          <!-- Popup Section -->
+          <div class="popup-container" id="popup">
+            <div class="popup ">
+              <div class="popup-content">
+                <span class="close-btn" onclick="hidePopup()"><i class="fa-solid fa-xmark"></i></span>
+                <h3 id="popup-title"></h3>
+                <img src="" id="pop-img" alt="">
+                <p id="popup-description"></p>
+                <a href="contact.html" class="btn btn-primary has-before has-after">Enroll Now <i style="margin-left: 12px;"
+                    class="fa-solid fa-arrow-right"></i></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" id="feature" aria-label="feature">
+        <div class="container">
+
+          <figure class="feature-banner" data-aos="zoom-in">
+            <img src="./assets/images/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle has-before">Why Choose us</p>
+
+            <h2 class="h2 section-title">
+              Discover Your Perfect Internship Matching <span class="has-before">Your Talents</span>
+            </h2>
+
+            <ul class="feature-list">
+
+              <li data-aos="fade-up">
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 174, 77%, 50%">
+                    <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Expert Guidance </h3>
+
+                    <p class="card-text">
+                      Gain hands-on experience and practical insights from seasoned industry professionals.
+
+
+
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li data-aos="fade-up">
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <ion-icon name="people-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Tailored Opportunities
+                    </h3>
+
+                    <p class="card-text">
+                      Match your skills with personalized internships for impactful career growth.
+
+
+
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li data-aos="fade-up">
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 343, 98%, 60%;">
+                    <ion-icon name="headset-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Career Support
+                    </h3>
+
+                    <p class="card-text">
+                      Receive resume help, interview prep, and networking opportunities for career success.
+
+
+
+
+
+
+
+
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- 
+        - #ROADMAP
+      -->
+
+
+      <div class="roadmap" id="work">
+        <h2 class="h2 section-title">
+          How It <span class="has-before"> Works? </span>
+        </h2>
+        <ul>
+          <li style="--accent-color:#41516C" data-aos="fade-up" data-aos-duration="200">
+            <div class="date">Step 01: </div>
+            <div class="title">Kickstart Your Journey</div>
+            <div class="descr">Begin your journey with Spark Intern by enrolling in the program. Pay the minimal
+              registration fee to secure your spot and access all program resources.</div>
+          </li>
+          <li style="--accent-color:#FBCA3E" data-aos="fade-up" data-aos-duration="400">
+            <div class="date">Step 02: </div>
+            <div class="title">Receive Your Welcome Letter</div>
+            <div class="descr">After successful enrollment, receive your offer letter, program access details, and a
+              comprehensive welcome kit via email to prepare for your internship journey.</div>
+          </li>
+          <li style="--accent-color:#E24A68" data-aos="fade-up" data-aos-duration="600">
+            <div class="date">Step 03: </div>
+            <div class="title">Expert-Led Learning</div>
+            <div class="descr">Dive into a self-paced learning experience guided by industry mentors, including
+              professionals from leading companies like MAANG. Access rich, practical resources designed for hands-on
+              learning.</div>
+          </li>
+          <li style="--accent-color:#1B5F8C" data-aos="fade-up" data-aos-duration="800">
+            <div class="date">Step 04: </div>
+            <div class="title">Create Real-Impact Projects</div>
+            <div class="descr">Apply your skills to real-world challenges by working on impactful projects. Build a
+              portfolio showcasing your expertise to future employers and collaborators.</div>
+          </li>
+          <li style="--accent-color:#4CADAD" data-aos="fade-up" data-aos-duration="1000">
+            <div class="date">Step 05: </div>
+            <div class="title">Earn Your Internship Credentials</div>
+            <div class="descr">Submit your completed projects and assessments to earn a Verified Internship Certificate
+              and a Letter of Recommendation, showcasing your accomplishments to the industry.</div>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter has-bg-image" id="roadmap" aria-label="newsletter"
+        style="background-image: url('./assets/images/newsletter-bg.jpg')">
+        <div class="container">
+
+          <figure class="newsletter-banner" data-aos="zoom-in-up">
+            <img src="./assets/images/newsletter-banner.png" width="355" height="356" loading="lazy"
+              alt="newsletter banner" class="w-100">
+          </figure>
+
+          <div class="newsletter-content">
+
+            <p class="section-subtitle has-before">Internship Roadmap</p>
+
+
+            <div class="card-container">
+              <div class="card" data-aos="zoom-out-up" data-aos-duration="800">
+                <div class="card-title">Self-paced Training</div>
+                <div class="card-content">
+                  <ul>
+                    <li>Foundational Skill Building</li>
+                    <li>Live Doubt-Solving Sessions (Weekends)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card card-green" data-aos="zoom-out-up" data-aos-duration="1000">
+                <div class="card-title">Real-time Projects</div>
+                <div class="card-content">
+                  <ul>
+                    <li>Industry-Relevant Projects</li>
+                    <li>Project-Oriented Sessions (Weekends)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+    - #CERTIFICATE
+  -->
+
+      <div id="certificate" style="margin-bottom: 0px;">
+        <h2 class="h2 section-title">
+          Internship <span class="has-before"> Certificate </span>
+        </h2>
+        <div class="certificate" style="margin-bottom: 0px;">
+          <div class="certificate-marquee">
+            <div class="certificate-card" data-aos="fade-up" data-aos-duration="800">
+              <div class="certificate-icon">
+                <img src="./assets/images/certi1.png" loading="lazy" alt="certificate icon">
+              </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <h1>Startup <br> India <br> Recognized</h1>
+              </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <img src="./assets/images/certi2.png" loading="lazy" alt="certificate icon">
+              </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <h1>ISO <br> 9001:2015 <br> Certified</h1>
+              </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <img src="./assets/images/certi3.png" loading="lazy" alt="certificate icon">
+              </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <h1>MSME <br> Registered</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="certificate">
+        <h2 class="h2 section-title">
+          Our
+          <span class="has-before"> Academic </span> Partners
+        </h2>
+        <div class="certificate">
+          <div class="certificate-marquee">
+            <div class="certificate-card" data-aos="fade-up" data-aos-duration="800">
+              <div class="certificate-icon">
+                <img src="./assets/images/micro.png" loading="lazy" alt="certificate icon">
+              </div>
+            </div>
+
+           
+
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <img src="./assets/images/apna.png" loading="lazy" alt="certificate icon">
+              </div>
+            </div>
+
+          
+
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <img src="./assets/images/udemy.png" loading="lazy" alt="certificate icon">
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+
+      </div>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <p class="footer-list-title">Spark Intern</p>
+
+          <p class="footer-text">
+            Spark Intern is a revolutionary platform designed to empower students and fresh graduates by providing
+            industry-relevant training, real-world projects, and verified certifications. </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-skype"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Usefull Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">How it Works</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Create</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Explore</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Services</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Community</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help Center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Partners</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Suggestions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Newsletters</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Instagram post</p>
+          </li>
+
+          <li>
+            <ul class="insta-post">
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-1.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-2.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-3.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-4.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-5.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-6.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2022 Spark Intern. All Rights Reserved by Spark Intern
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Terms and conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Login / Signup</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/js/script.js" defer></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

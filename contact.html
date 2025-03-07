@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Intern - Building Digital Network</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 
+    - preload images
+  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+
+<body id="top">
+
+
+
+
+    <!-- 
+    - #HEADER
+  -->
+
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <img src="assets/images/logo.png" alt="" class="logo">
+
+            <nav class="navbar" data-navbar>
+
+                <div class="wrapper">
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#service" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#feature" class="navbar-link" data-nav-link>Features</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#roadmap" class="navbar-link" data-nav-link>Roadmap</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#work" class="navbar-link" data-nav-link>Work</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="#" class="btn btn-primary has-before has-after">Let’s Talk 👋</a>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+
+    <div class="form-container">
+        <h1>Enrollment Form</h1>
+        <form id="enrollmentForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College</label>
+                <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label>Course Options</label>
+                <div class="options">
+                    <input type="radio" name="course" value="data-analyst" required><label>Data Analyst</label>
+                    <input type="radio" name="course" value="python-development"><label>Python Development</label>
+                    <input type="radio" name="course" value="javascript"><label>JavaScript</label>
+                    <input type="radio" name="course" value="full-stack-development"><label>Full Stack
+                        Development</label>
+                    <input type="radio" name="course" value="cyber-security"><label>Cyber Security</label>
+                    <input type="radio" name="course" value="ai-course"><label>AI Course</label>
+                    <input type="radio" name="course" value="digital-marketing"><label>Digital Marketing</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Internship Duration</label>
+                <div class="options">
+                    <input type="radio" name="duration" value="1-month" required><label>1 Month</label>
+                    <input type="radio" name="duration" value="3-month"><label>3 Months</label>
+                    <input type="radio" name="duration" value="6-month"><label>6 Months</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+<!-- 
+    - #FOOTER
+  -->
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-top section">
+
+            <div class="footer-brand">
+
+                <p class="footer-list-title">Spark Intern</p>
+
+                <p class="footer-text">
+                    Spark Intern is a revolutionary platform designed to empower students and fresh graduates by
+                    providing
+                    industry-relevant training, real-world projects, and verified certifications. </p>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-skype"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Usefull Links</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Contact us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">How it Works</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Create</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Explore</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Terms & Services</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Community</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Help Center</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Partners</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Suggestions</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Blog</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Newsletters</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Instagram post</p>
+                </li>
+
+                <li>
+                    <ul class="insta-post">
+
+                        <li>
+                            <div class="insta-card">
+
+                                <figure class="post-banner">
+                                    <img src="./assets/images/insta-post-1.jpg" width="77" height="63" loading="lazy"
+                                        alt="instagram post" class="img-cover">
+                                </figure>
+
+                                <a href="#" class="card-content">
+                                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="insta-card">
+
+                                <figure class="post-banner">
+                                    <img src="./assets/images/insta-post-2.jpg" width="77" height="63" loading="lazy"
+                                        alt="instagram post" class="img-cover">
+                                </figure>
+
+                                <a href="#" class="card-content">
+                                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="insta-card">
+
+                                <figure class="post-banner">
+                                    <img src="./assets/images/insta-post-3.jpg" width="77" height="63" loading="lazy"
+                                        alt="instagram post" class="img-cover">
+                                </figure>
+
+                                <a href="#" class="card-content">
+                                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="insta-card">
+
+                                <figure class="post-banner">
+                                    <img src="./assets/images/insta-post-4.jpg" width="77" height="63" loading="lazy"
+                                        alt="instagram post" class="img-cover">
+                                </figure>
+
+                                <a href="#" class="card-content">
+                                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="insta-card">
+
+                                <figure class="post-banner">
+                                    <img src="./assets/images/insta-post-5.jpg" width="77" height="63" loading="lazy"
+                                        alt="instagram post" class="img-cover">
+                                </figure>
+
+                                <a href="#" class="card-content">
+                                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="insta-card">
+
+                                <figure class="post-banner">
+                                    <img src="./assets/images/insta-post-6.jpg" width="77" height="63" loading="lazy"
+                                        alt="instagram post" class="img-cover">
+                                </figure>
+
+                                <a href="#" class="card-content">
+                                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p class="copyright">
+                &copy; 2022 Spark Intern. All Rights Reserved by Spark Intern
+            </p>
+
+            <ul class="footer-bottom-list">
+
+                <li>
+                    <a href="#" class="footer-bottom-link">Terms and conditions</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-bottom-link">Privacy policy</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-bottom-link">Login / Signup</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+<!-- 
+    - #BACK TO TOP
+  -->
+
+<a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+</a>
+
+<!-- 
+    - custom js link
+  -->
+
+<script>
+    document.getElementById('enrollmentForm').addEventListener('submit', async function (event) {
+        event.preventDefault(); 
+
+        const form = event.target;
+
+        const formData = new FormData(form);
+        const formJSON = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('http://localhost:5000/api/contact', { 
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formJSON),
+            });
+
+            if (response.ok) {
+                Toastify({
+                    text: "Form submitted successfully!",
+                    duration: 4000,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "#4caf50",
+                    stopOnFocus: true,
+                }).showToast();
+                form.reset(); // Reset the form
+            } else {
+                const errorData = await response.json();
+                Toastify({
+                    text: errorData.error || "Failed to submit form.",
+                    duration: 4000,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "#f44336",
+                    stopOnFocus: true,
+                }).showToast();
+            }
+        } catch (error) {
+            Toastify({
+                text: "An error occurred. Please try again.",
+                duration: 4000,
+                gravity: "top",
+                position: "center",
+                backgroundColor: "#f44336",
+                stopOnFocus: true,
+            }).showToast();
+        }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./assets/js/script.js" defer></script>
+
+<!-- 
+    - ionicon link
+  -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
